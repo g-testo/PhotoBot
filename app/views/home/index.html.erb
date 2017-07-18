@@ -99,11 +99,17 @@
             location: locale,
             movement: motion
           }
+
+
           if (cat == "landscape" || cat == "cityscape" || locale == "outdoors") {
             $.redirect("/maps?category=" + cat + "&movement=" + motion, data);
           } else {
-            $.redirect("/nomaps?category=" + cat + "&movement=" + motion, data);
+            $.redirect("/" + cat + "?category=" + cat + "&movement=" + motion, data);
           }
+
+
+
+
         } else {
           responsiveVoice.speak("Please let me know if you want to take a Portrait, Macro, Landscape or Cityscape Photo.");
           volumeLevelStop();

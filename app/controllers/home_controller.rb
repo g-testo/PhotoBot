@@ -7,10 +7,33 @@ class HomeController < ApplicationController
     @loc = params[:location]
     @mov = params[:movement]
   end
-
-  def nomaps
+  # def nomaps
+    # @cat = params[:category]
+    # @loc = params[:location]
+    # @mov = params[:movement]
+  # end
+  def macro
     @cat = params[:category]
     @loc = params[:location]
     @mov = params[:movement]
   end
+
+  def landscape
+    @cat = params[:category]
+    @loc = params[:location]
+    @mov = params[:movement]
+  end
+
+  def cityscape
+    @cat = params[:category]
+    @loc = params[:location]
+    @mov = params[:movement]
+  end
+
+  def portrait
+    @cat = params[:category]
+    @loc = params[:location]
+    @mov = params[:movement]
+  end
+
 end
